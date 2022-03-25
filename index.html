@@ -15,18 +15,34 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <div class="jtCovMain">
+      <div class="jtCovSec">
+        <h1 class="jtCovH1">Hello...</h1>
+        <p class="jtCovP">Please enter your name</p>
+        <input class="nameForm form-control-lg" type="text" placeholder="Name">
+        <br>
+        <button type="button" class="continueBtn btn-secondary btn-sm">Continue</button>
+    </div>
+
+    </div>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-3">Daily Planner</h1>
+      <img src="./assets/imgs/morning.png" alt="Sun" class="planImg">
+      <p class="greeting"></p>
+      <p id="currentDay"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -34,5 +50,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

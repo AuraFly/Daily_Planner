@@ -13,12 +13,40 @@ textarea {
   padding: 10px;
 }
 
+.jtCovMain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.jtCovSec {
+  margin-top: 60%;
+}
+
+.continueBtn {
+  margin-top: 10px;
+}
+
+.greeting {
+  font-size: larger;
+  font-weight: bold;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.display-3 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  border-bottom: 4px dashed grey;
 }
 
 .description {

@@ -28,6 +28,7 @@
   </head>
 
   <body>
+    <!-- Area for header card showing greeting -->
     <div class="jtCovMain">
       <div class="jtCovSec">
         <h1 class="jtCovH1">Hello...</h1>
@@ -35,17 +36,20 @@
         <input class="nameForm form-control-lg" type="text" placeholder="Name">
         <br>
         <button type="button" class="continueBtn btn-secondary btn-sm">Continue</button>
+      </div>
     </div>
 
-    </div>
+    <!-- main body for planner/timeblocks -->
     <header class="jumbotron">
       <h1 class="display-3">Daily Planner</h1>
       <img src="./assets/imgs/morning.png" alt="Sun" class="planImg">
       <p class="greeting"></p>
       <p id="currentDay"></p>
     </header>
-    <div class="container">
+    <div class="mPlanner">
       <!-- Timeblocks go here -->
+      <!-- generating via .forEach in JS -->
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

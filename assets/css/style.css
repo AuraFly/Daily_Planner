@@ -1,7 +1,9 @@
+/* I altered a few things on the base code that was here */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #27272e;
 }
 
 textarea {
@@ -13,6 +15,7 @@ textarea {
   padding: 10px;
 }
 
+/* Style for the cover page asking for your name */
 .jtCovMain {
   position: fixed;
   width: 100%;
@@ -20,24 +23,29 @@ textarea {
   text-align: center;
   background-color: black;
   color: white;
+  z-index: 2;
 }
 
 .jtCovSec {
-  margin-top: 60%;
+  margin-top: 20%;
 }
 
 .continueBtn {
   margin-top: 10px;
 }
 
+/*  Controls the style for the header card*/
 .greeting {
   font-size: larger;
   font-weight: bold;
 }
 
 .jumbotron {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
   text-align: center;
-  background-color: transparent;
+  background-color: white;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -53,6 +61,7 @@ textarea {
   white-space: pre-wrap;
 }
 
+/* Stylizations for the main container for the planner */
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -61,28 +70,39 @@ textarea {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid #27272e;
+  justify-content: center;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #06aed5;
   color: #000000;
   border-top: 1px dashed #000000;
+  width: 10%;
+  border-radius: 15px 0px 0px 15px;
+  justify-content: center;
+  text-align:center;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: rgb(197, 177, 181);
+  color: rgb(121, 121, 121);
+  font-style: italic;
+  width: 60%;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: rgb(218, 170, 116);
   color: white;
+  font-weight: bold;
+  width: 60%;
+  box-shadow: 0 0 30px gold;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
+  width: 60%;
 }
 
 .saveBtn {
@@ -91,9 +111,15 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  width: 5%
+
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.saveBtn :active {
+  font-size: 20px;
 }
